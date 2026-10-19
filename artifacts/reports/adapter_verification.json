@@ -1,0 +1,28 @@
+{
+  "status": "ALL_TESTS_PASSED",
+  "inspector": {
+    "projects_discovered": [
+      "CutPilot_Canary"
+    ],
+    "project_meta": {
+      "project_id": "a82b5384-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "project_name": "CutPilot_Canary",
+      "project_version": 17,
+      "streams": 1,
+      "current_timeline_index": 0
+    },
+    "media_pool_count": 4,
+    "timeline_items_count": 9
+  },
+  "fcp7xml": {
+    "output_file": "tests/fixtures/outputs/test_rough_cut.xml",
+    "total_frames": 375,
+    "total_duration_s": 12.5,
+    "clips_count": 3
+  },
+  "captions": {
+    "output_file": "tests/fixtures/outputs/test_captions.srt",
+    "cues_count": 11,
+    "word_count": 48
+  }
+}

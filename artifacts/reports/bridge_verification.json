@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-10-19T20:40:17+05:30",
+  "status": "PASS",
+  "connection": {
+    "host": "127.0.0.1",
+    "port": 49632,
+    "tcp_test_succeeded": true
+  },
+  "bridge_info": {
+    "product": "DaVinci Resolve",
+    "version": "21.0.3.7",
+    "host_model": "child_process",
+    "blocking_required": true,
+    "operations_count": 15
+  },
+  "project_query": {
+    "active_project": "CutPilot_Canary",
+    "timeline_count": 1,
+    "timelines": [
+      {
+        "index": 1,
+        "name": "Timeline 1",
+        "track_count_video": 2,
+        "track_count_audio": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "agent": "Agent 1 — Transcript Extraction",
+  "pipeline_type": "Deterministic Speech Recognition Tool Pipeline",
+  "architecture_evaluation": {
+    "platform": "Windows on ARM64 (Qualcomm Snapdragon X2 Plus)",
+    "faster_whisper_evaluation": "faster-whisper and openai-whisper require ctranslate2 and torch, which lack official native Windows ARM64 wheels on PyPI for Python 3.11.",
+    "selected_backend": "whisper.cpp ARM64 native binary with NEON and ARM_FMA vector acceleration",
+    "model": "ggml-base.bin",
+    "quantization": "FP16 (standard ggml base model)",
+    "threads": 6
+  },
+  "media_metadata": {
+    "file": "test-15s.mp4",
+    "duration_seconds": 15.267,
+    "audio_stream": {
+      "codec": "aac",
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "bitrate_bps": 192100
+    },
+    "audio_analysis": {
+      "has_audio": true,
+      "is_silent": false,
+      "duration_s": 15.275,
+      "max_amplitude": 20728,
+      "max_amplitude_ratio": 0.6326,
+      "rms_energy": 3506.64,
+      "channels": 1,
+      "sample_rate": 16000,
+      "bit_depth": 16
+    }
+  },
+  "transcription_summary": {
+    "detected_language": "en",
+    "language_confidence": 0.9028,
+    "processing_time_seconds": 2.24,
+    "real_time_factor": 0.147,
+    "segment_count": 3,
+    "word_count": 48,
+    "full_transcript": "let's move on with the app demonstration. So let's turn on the airplane mode so we can test the application and offline version. So let's open the app. So this is the new i displayed for the asher worker when she opens it. so she can switch it."
+  },
+  "verification": {
+    "within_media_duration": false,
+    "media_duration_seconds": 15.267,
+    "chronologically_ordered": true,
+    "out_of_bounds_summary": {
+      "has_out_of_bounds_timestamps": true,
+      "out_of_bounds_segment_count": 1,
+      "out_of_bounds_word_count": 2,
+      "max_observed_timestamp_s": 16.0,
+      "out_of_bounds_segments": [
+        {
+          "segment_id": 2,
+          "text": "so she can switch it.",
+          "end_time_s": 16.0,
+          "out_of_bounds_by_s": 0.733
+        }
+      ],
+      "out_of_bounds_words": [
+        {
+          "word": "switch",
+          "end_time_s": 15.42,
+          "out_of_bounds_by_s": 0.153
+        },
+        {
+          "word": "it.",
+          "end_time_s": 16.0,
+          "out_of_bounds_by_s": 0.733
+        }
+      ],
+      "explanation": "Raw timestamps are preserved without silent clipping. Whisper acoustic models operate on 30-second fixed context windows, occasionally producing trailing timestamps past the media boundary for speech ending near EOF."
+    },
+    "unintelligible_or_ambiguous_terms": [
+      {
+        "term": "asher worker",
+        "timestamp": "00:00:12.000",
+        "interpretation": "Phonetic transcription of 'ASHA worker' (Accredited Social Health Activist, healthcare community worker in India)."
+      },
+      {
+        "term": "new i",
+        "timestamp": "00:00:10.500",
+        "interpretation": "Phonetic transcription of 'new UI' (referring to the mobile user interface of the Sahaaya app)."
+      }
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": 0,
+      "start_time_s": 0.0,
+      "end_time_s": 9.0,
+      "start_formatted": "00:00:00.000",
+      "end_formatted": "00:00:09.000",
+      "duration_s": 9.0,
+      "text": "let's move on with the app demonstration. So let's turn on the airplane mode so we can test the application and offline version.",
+      "confidence": 0.7042,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "segment_id": 1,
+      "start_time_s": 9.0,
+      "end_time_s": 14.0,
+      "start_formatted": "00:00:09.000",
+      "end_formatted": "00:00:14.000",
+      "duration_s": 5.0,
+      "text": "So let's open the app. So this is the new i displayed for the asher worker when she opens it.",
+      "confidence": 0.7405,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "segment_id": 2,
+      "start_time_s": 14.0,
+      "end_time_s": 16.0,
+      "start_formatted": "00:00:14.000",
+      "end_formatted": "00:00:16.000",
+      "duration_s": 2.0,
+      "text": "so she can switch it.",
+      "confidence": 0.7862,
+      "out_of_bounds": true,
+      "out_of_bounds_by_s": 0.733,
+      "validation_warning": "End timestamp (16.0s) exceeds media duration (15.267s) by +0.733s (Whisper 30s context window padding)."
+    }
+  ],
+  "words": [
+    {
+      "word": "let's",
+      "start_time_s": 0.14,
+      "end_time_s": 0.43,
+      "start_formatted": "00:00:00.140",
+      "end_formatted": "00:00:00.430",
+      "confidence": 0.5027,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "move",
+      "start_time_s": 0.43,
+      "end_time_s": 0.77,
+      "start_formatted": "00:00:00.430",
+      "end_formatted": "00:00:00.770",
+      "confidence": 0.5357,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "on",
+      "start_time_s": 0.78,
+      "end_time_s": 0.94,
+      "start_formatted": "00:00:00.780",
+      "end_formatted": "00:00:00.940",
+      "confidence": 0.9639,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "with",
+      "start_time_s": 1.21,
+      "end_time_s": 1.3,
+      "start_formatted": "00:00:01.210",
+      "end_formatted": "00:00:01.300",
+      "confidence": 0.929,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "the",
+      "start_time_s": 1.3,
+      "end_time_s": 1.56,
+      "start_formatted": "00:00:01.300",
+      "end_formatted": "00:00:01.560",
+      "confidence": 0.8851,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "app",
+      "start_time_s": 1.56,
+      "end_time_s": 1.82,
+      "start_formatted": "00:00:01.560",
+      "end_formatted": "00:00:01.820",
+      "confidence": 0.9411,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "demonstration.",
+      "start_time_s": 1.82,
+      "end_time_s": 3.08,
+      "start_formatted": "00:00:01.820",
+      "end_formatted": "00:00:03.080",
+      "confidence": 0.6979,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "So",
+      "start_time_s": 3.53,
+      "end_time_s": 3.61,
+      "start_formatted": "00:00:03.530",
+      "end_formatted": "00:00:03.610",
+      "confidence": 0.3902,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "let's",
+      "start_time_s": 3.61,
+      "end_time_s": 3.88,
+      "start_formatted": "00:00:03.610",
+      "end_formatted": "00:00:03.880",
+      "confidence": 0.9041,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "turn",
+      "start_time_s": 3.95,
+      "end_time_s": 4.12,
+      "start_formatted": "00:00:03.950",
+      "end_formatted": "00:00:04.120",
+      "confidence": 0.8556,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "on",
+      "start_time_s": 4.12,
+      "end_time_s": 4.23,
+      "start_formatted": "00:00:04.120",
+      "end_formatted": "00:00:04.230",
+      "confidence": 0.9827,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "the",
+      "start_time_s": 4.23,
+      "end_time_s": 4.44,
+      "start_formatted": "00:00:04.230",
+      "end_formatted": "00:00:04.440",
+      "confidence": 0.9475,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "airplane",
+      "start_time_s": 4.44,
+      "end_time_s": 5.21,
+      "start_formatted": "00:00:04.440",
+      "end_formatted": "00:00:05.210",
+      "confidence": 0.219,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "mode",
+      "start_time_s": 5.21,
+      "end_time_s": 5.59,
+      "start_formatted": "00:00:05.210",
+      "end_formatted": "00:00:05.590",
+      "confidence": 0.9887,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "so",
+      "start_time_s": 5.84,
+      "end_time_s": 6.0,
+      "start_formatted": "00:00:05.840",
+      "end_formatted": "00:00:06.000",
+      "confidence": 0.4711,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "we",
+      "start_time_s": 6.0,
+      "end_time_s": 6.18,
+      "start_formatted": "00:00:06.000",
+      "end_formatted": "00:00:06.180",
+      "confidence": 0.8306,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "can",
+      "start_time_s": 6.28,
+      "end_time_s": 6.4,
+      "start_formatted": "00:00:06.280",
+      "end_formatted": "00:00:06.400",
+      "confidence": 0.8204,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "test",
+      "start_time_s": 6.4,
+      "end_time_s": 6.7,
+      "start_formatted": "00:00:06.400",
+      "end_formatted": "00:00:06.700",
+      "confidence": 0.7584,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "the",
+      "start_time_s": 6.81,
+      "end_time_s": 6.92,
+      "start_formatted": "00:00:06.810",
+      "end_formatted": "00:00:06.920",
+      "confidence": 0.6477,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "application",
+      "start_time_s": 6.92,
+      "end_time_s": 7.54,
+      "start_formatted": "00:00:06.920",
+      "end_formatted": "00:00:07.540",
+      "confidence": 0.6708,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "and",
+      "start_time_s": 7.68,
+      "end_time_s": 7.91,
+      "start_formatted": "00:00:07.680",
+      "end_formatted": "00:00:07.910",
+      "confidence": 0.1747,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "offline",
+      "start_time_s": 8.02,
+      "end_time_s": 8.41,
+      "start_formatted": "00:00:08.020",
+      "end_formatted": "00:00:08.410",
+      "confidence": 0.7093,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "version.",
+      "start_time_s": 8.41,
+      "end_time_s": 9.0,
+      "start_formatted": "00:00:08.410",
+      "end_formatted": "00:00:09.000",
+      "confidence": 0.8586,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "So",
+      "start_time_s": 9.1,
+      "end_time_s": 9.1,
+      "start_formatted": "00:00:09.100",
+      "end_formatted": "00:00:09.100",
+      "confidence": 0.7223,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "let's",
+      "start_time_s": 9.14,
+      "end_time_s": 9.34,
+      "start_formatted": "00:00:09.140",
+      "end_formatted": "00:00:09.340",
+      "confidence": 0.7805,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "open",
+      "start_time_s": 9.34,
+      "end_time_s": 9.53,
+      "start_formatted": "00:00:09.340",
+      "end_formatted": "00:00:09.530",
+      "confidence": 0.984,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "the",
+      "start_time_s": 9.54,
+      "end_time_s": 9.67,
+      "start_formatted": "00:00:09.540",
+      "end_formatted": "00:00:09.670",
+      "confidence": 0.9615,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "app.",
+      "start_time_s": 9.69,
+      "end_time_s": 10.0,
+      "start_formatted": "00:00:09.690",
+      "end_formatted": "00:00:10.000",
+      "confidence": 0.8765,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "So",
+      "start_time_s": 10.14,
+      "end_time_s": 10.14,
+      "start_formatted": "00:00:10.140",
+      "end_formatted": "00:00:10.140",
+      "confidence": 0.7288,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "this",
+      "start_time_s": 10.22,
+      "end_time_s": 10.42,
+      "start_formatted": "00:00:10.220",
+      "end_formatted": "00:00:10.420",
+      "confidence": 0.9873,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "is",
+      "start_time_s": 10.47,
+      "end_time_s": 10.57,
+      "start_formatted": "00:00:10.470",
+      "end_formatted": "00:00:10.570",
+      "confidence": 0.9974,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "the",
+      "start_time_s": 10.57,
+      "end_time_s": 10.78,
+      "start_formatted": "00:00:10.570",
+      "end_formatted": "00:00:10.780",
+      "confidence": 0.8949,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "new",
+      "start_time_s": 10.78,
+      "end_time_s": 10.99,
+      "start_formatted": "00:00:10.780",
+      "end_formatted": "00:00:10.990",
+      "confidence": 0.894,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "i",
+      "start_time_s": 10.99,
+      "end_time_s": 11.06,
+      "start_formatted": "00:00:10.990",
+      "end_formatted": "00:00:11.060",
+      "confidence": 0.1546,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "displayed",
+      "start_time_s": 11.06,
+      "end_time_s": 11.67,
+      "start_formatted": "00:00:11.060",
+      "end_formatted": "00:00:11.670",
+      "confidence": 0.5286,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "for",
+      "start_time_s": 11.7,
+      "end_time_s": 11.92,
+      "start_formatted": "00:00:11.700",
+      "end_formatted": "00:00:11.920",
+      "confidence": 0.9789,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "the",
+      "start_time_s": 11.92,
+      "end_time_s": 12.08,
+      "start_formatted": "00:00:11.920",
+      "end_formatted": "00:00:12.080",
+      "confidence": 0.9523,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "asher",
+      "start_time_s": 12.27,
+      "end_time_s": 12.47,
+      "start_formatted": "00:00:12.270",
+      "end_formatted": "00:00:12.470",
+      "confidence": 0.3779,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "worker",
+      "start_time_s": 12.53,
+      "end_time_s": 12.88,
+      "start_formatted": "00:00:12.530",
+      "end_formatted": "00:00:12.880",
+      "confidence": 0.1629,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "when",
+      "start_time_s": 12.95,
+      "end_time_s": 13.2,
+      "start_formatted": "00:00:12.950",
+      "end_formatted": "00:00:13.200",
+      "confidence": 0.6101,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "she",
+      "start_time_s": 13.2,
+      "end_time_s": 13.41,
+      "start_formatted": "00:00:13.200",
+      "end_formatted": "00:00:13.410",
+      "confidence": 0.9878,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "opens",
+      "start_time_s": 13.41,
+      "end_time_s": 13.77,
+      "start_formatted": "00:00:13.410",
+      "end_formatted": "00:00:13.770",
+      "confidence": 0.9586,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "it.",
+      "start_time_s": 13.77,
+      "end_time_s": 14.0,
+      "start_formatted": "00:00:13.770",
+      "end_formatted": "00:00:14.000",
+      "confidence": 0.8057,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "so",
+      "start_time_s": 14.14,
+      "end_time_s": 14.2,
+      "start_formatted": "00:00:14.140",
+      "end_formatted": "00:00:14.200",
+      "confidence": 0.3287,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "she",
+      "start_time_s": 14.49,
+      "end_time_s": 14.5,
+      "start_formatted": "00:00:14.490",
+      "end_formatted": "00:00:14.500",
+      "confidence": 1.0,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "can",
+      "start_time_s": 14.52,
+      "end_time_s": 14.82,
+      "start_formatted": "00:00:14.520",
+      "end_formatted": "00:00:14.820",
+      "confidence": 1.0,
+      "out_of_bounds": false,
+      "out_of_bounds_by_s": 0.0
+    },
+    {
+      "word": "switch",
+      "start_time_s": 15.21,
+      "end_time_s": 15.42,
+      "start_formatted": "00:00:15.210",
+      "end_formatted": "00:00:15.420",
+      "confidence": 0.6539,
+      "out_of_bounds": true,
+      "out_of_bounds_by_s": 0.153,
+      "validation_warning": "Word end timestamp (15.42s) exceeds media duration (15.267s) by +0.153s."
+    },
+    {
+      "word": "it.",
+      "start_time_s": 15.47,
+      "end_time_s": 16.0,
+      "start_formatted": "00:00:15.470",
+      "end_formatted": "00:00:16.000",
+      "confidence": 0.8763,
+      "out_of_bounds": true,
+      "out_of_bounds_by_s": 0.733,
+      "validation_warning": "Word end timestamp (16.0s) exceeds media duration (15.267s) by +0.733s."
+    }
+  ]
+}

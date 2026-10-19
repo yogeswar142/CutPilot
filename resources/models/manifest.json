@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "model_id": "whisper-base",
+      "filename": "ggml-base.bin",
+      "relative_path": "resources/models/whisper/ggml-base.bin",
+      "architecture": "whisper.cpp",
+      "size_bytes": 147964211,
+      "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf00e087def5df469604d603a5",
+      "license": "MIT",
+      "language": "multilingual"
+    }
+  ]
+}

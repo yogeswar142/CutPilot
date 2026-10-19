@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:03,000
+CutPilot Test Sequence Part 1
+
+2
+00:00:03,500 --> 00:00:07,000
+Deterministic synthetic test video
+
+3
+00:00:07,500 --> 00:00:11,000
+Verifying frame rate and timecode alignment
+
+4
+00:00:11,500 --> 00:00:15,000
+Automated rough-cut conforming complete

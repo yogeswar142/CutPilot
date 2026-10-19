@@ -1,0 +1,107 @@
+[
+  {
+    "run_id": "gemini-3.5-flash-lite_run1",
+    "model_id": "gemini-3.5-flash-lite",
+    "status_code": 200,
+    "success": true,
+    "elapsed_seconds": 6.21,
+    "finish_reason": "STOP",
+    "is_valid_json": true,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 1019,
+      "totalTokenCount": 2243,
+      "promptTokensDetails": [
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "error": null
+  },
+  {
+    "run_id": "gemini-3.5-flash-lite_run2",
+    "model_id": "gemini-3.5-flash-lite",
+    "status_code": 200,
+    "success": true,
+    "elapsed_seconds": 6.419,
+    "finish_reason": "STOP",
+    "is_valid_json": true,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 952,
+      "totalTokenCount": 2176,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        },
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "error": null
+  },
+  {
+    "run_id": "gemini-3.5-flash-lite_run3",
+    "model_id": "gemini-3.5-flash-lite",
+    "status_code": 200,
+    "success": true,
+    "elapsed_seconds": 6.021,
+    "finish_reason": "STOP",
+    "is_valid_json": true,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 993,
+      "totalTokenCount": 2217,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        },
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "error": null
+  },
+  {
+    "run_id": "gemini-3.8-flash_run1",
+    "model_id": "gemini-3.8-flash",
+    "status_code": 200,
+    "success": true,
+    "elapsed_seconds": 14.415,
+    "finish_reason": "STOP",
+    "is_valid_json": true,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 906,
+      "totalTokenCount": 2396,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        },
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        }
+      ],
+      "thoughtsTokenCount": 266,
+      "serviceTier": "standard"
+    },
+    "error": null
+  }
+]

@@ -1,0 +1,435 @@
+{
+  "gemini-3.5-flash-lite_run1": {
+    "model": "gemini-3.5-flash-lite",
+    "elapsed_seconds": 6.21,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 1019,
+      "totalTokenCount": 2243,
+      "promptTokensDetails": [
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "parsed_content": {
+      "visual_events": [
+        {
+          "start_timestamp": "00:00.0",
+          "end_timestamp": "00:03.9",
+          "event_description": "User displays the phone home screen with a Hindu deity wallpaper and Sahasya app icon visible.",
+          "ui_state_changes": "Home screen displayed",
+          "visible_actions": "None",
+          "on_screen_text": [
+            "Sahasya"
+          ],
+          "evidence": "Home screen UI with app icons and wallpaper.",
+          "confidence": "HIGH: Standard home screen view."
+        },
+        {
+          "start_timestamp": "00:03.9",
+          "end_timestamp": "00:05.9",
+          "event_description": "User pulls down the quick settings panel and toggles Airplane mode on.",
+          "ui_state_changes": "Quick settings panel appears, airplane mode highlighted.",
+          "visible_actions": "Swipe down gesture to open quick settings, tap on airplane mode tile",
+          "on_screen_text": [
+            "Sun, 18 Oct",
+            "SUDHI KSHATRIA 5G",
+            "Wi-Fi",
+            "Bluetooth",
+            "Aeroplane mode on"
+          ],
+          "evidence": "Quick settings panel is overlaid with toggles.",
+          "confidence": "HIGH: Clear UI transition."
+        },
+        {
+          "start_timestamp": "00:05.9",
+          "end_timestamp": "00:06.9",
+          "event_description": "Quick settings panel is closed, returning to home screen.",
+          "ui_state_changes": "Quick settings dismissed, home screen visible.",
+          "visible_actions": "Swipe up or tap outside to close panel",
+          "on_screen_text": [
+            "Sahasya"
+          ],
+          "evidence": "Home screen wallpaper returns.",
+          "confidence": "HIGH: Return to home screen."
+        },
+        {
+          "start_timestamp": "00:06.9",
+          "end_timestamp": "00:09.9",
+          "event_description": "User taps the Sahasya app icon, launching the app with a splash screen.",
+          "ui_state_changes": "App launch splash screen with Sahasya logo.",
+          "visible_actions": "Tap on Sahasya app icon",
+          "on_screen_text": [],
+          "evidence": "White splash screen displaying the Sahasya logo.",
+          "confidence": "HIGH: App opening animation."
+        },
+        {
+          "start_timestamp": "00:09.9",
+          "end_timestamp": "00:14.3",
+          "event_description": "The Sahasya app main interface loads, showing the 'Ask Sahasya Protocol Guide' with search bar and sample queries.",
+          "ui_state_changes": "App home interface loaded with search input and protocol guide.",
+          "visible_actions": "None",
+          "on_screen_text": [
+            "Sahasya",
+            "Frontline Clinical Companion",
+            "Ask Sahasya Protocol Guide",
+            "100% Offline | Offline & AI-first Protocols | Safety-First Evaluation",
+            "Enter symptom, sign or question",
+            "SEARCH PROTOCOL",
+            "Quick Sample Queries:",
+            "Vaginal bleeding pregnant",
+            "Baby-like sinking fast breathing",
+            "How much ORS for diarrhoea",
+            "What vaccines at birth",
+            "Amoxicillin syrup dose 1 yr",
+            "Sahasya Clinical Companion",
+            "Ask Sahasya",
+            "Today's Visits"
+          ],
+          "evidence": "Full app dashboard displayed with green header and protocol search options.",
+          "confidence": "HIGH: Fully loaded application screen."
+        }
+      ],
+      "moments_requiring_precise_inspection": [
+        {
+          "timestamp": "00:04.4",
+          "reason": "Inspect airplane mode toggle action in quick settings"
+        },
+        {
+          "timestamp": "00:07.1",
+          "reason": "Inspect app icon tap leading to app launch"
+        }
+      ],
+      "overall_summary": "The user toggles airplane mode on through the quick settings panel and then opens the offline medical protocol app Sahasya."
+    },
+    "raw_text": "{\n  \"visual_events\": [\n    {\n      \"start_timestamp\": \"00:00.0\",\n      \"end_timestamp\": \"00:03.9\",\n      \"event_description\": \"User displays the phone home screen with a Hindu deity wallpaper and Sahasya app icon visible.\",\n      \"ui_state_changes\": \"Home screen displayed\",\n      \"visible_actions\": \"None\",\n      \"on_screen_text\": [\n        \"Sahasya\"\n      ],\n      \"evidence\": \"Home screen UI with app icons and wallpaper.\",\n      \"confidence\": \"HIGH: Standard home screen view.\"\n    },\n    {\n      \"start_timestamp\": \"00:03.9\",\n      \"end_timestamp\": \"00:05.9\",\n      \"event_description\": \"User pulls down the quick settings panel and toggles Airplane mode on.\",\n      \"ui_state_changes\": \"Quick settings panel appears, airplane mode highlighted.\",\n      \"visible_actions\": \"Swipe down gesture to open quick settings, tap on airplane mode tile\",\n      \"on_screen_text\": [\n        \"Sun, 18 Oct\",\n        \"SUDHI KSHATRIA 5G\",\n        \"Wi-Fi\",\n        \"Bluetooth\",\n        \"Aeroplane mode on\"\n      ],\n      \"evidence\": \"Quick settings panel is overlaid with toggles.\",\n      \"confidence\": \"HIGH: Clear UI transition.\"\n    },\n    {\n      \"start_timestamp\": \"00:05.9\",\n      \"end_timestamp\": \"00:06.9\",\n      \"event_description\": \"Quick settings panel is closed, returning to home screen.\",\n      \"ui_state_changes\": \"Quick settings dismissed, home screen visible.\",\n      \"visible_actions\": \"Swipe up or tap outside to close panel\",\n      \"on_screen_text\": [\n        \"Sahasya\"\n      ],\n      \"evidence\": \"Home screen wallpaper returns.\",\n      \"confidence\": \"HIGH: Return to home screen.\"\n    },\n    {\n      \"start_timestamp\": \"00:06.9\",\n      \"end_timestamp\": \"00:09.9\",\n      \"event_description\": \"User taps the Sahasya app icon, launching the app with a splash screen.\",\n      \"ui_state_changes\": \"App launch splash screen with Sahasya logo.\",\n      \"visible_actions\": \"Tap on Sahasya app icon\",\n      \"on_screen_text\": [],\n      \"evidence\": \"White splash screen displaying the Sahasya logo.\",\n      \"confidence\": \"HIGH: App opening animation.\"\n    },\n    {\n      \"start_timestamp\": \"00:09.9\",\n      \"end_timestamp\": \"00:14.3\",\n      \"event_description\": \"The Sahasya app main interface loads, showing the 'Ask Sahasya Protocol Guide' with search bar and sample queries.\",\n      \"ui_state_changes\": \"App home interface loaded with search input and protocol guide.\",\n      \"visible_actions\": \"None\",\n      \"on_screen_text\": [\n        \"Sahasya\",\n        \"Frontline Clinical Companion\",\n        \"Ask Sahasya Protocol Guide\",\n        \"100% Offline | Offline & AI-first Protocols | Safety-First Evaluation\",\n        \"Enter symptom, sign or question\",\n        \"SEARCH PROTOCOL\",\n        \"Quick Sample Queries:\",\n        \"Vaginal bleeding pregnant\",\n        \"Baby-like sinking fast breathing\",\n        \"How much ORS for diarrhoea\",\n        \"What vaccines at birth\",\n        \"Amoxicillin syrup dose 1 yr\",\n        \"Sahasya Clinical Companion\",\n        \"Ask Sahasya\",\n        \"Today's Visits\"\n      ],\n      \"evidence\": \"Full app dashboard displayed with green header and protocol search options.\",\n      \"confidence\": \"HIGH: Fully loaded application screen.\"\n    }\n  ],\n  \"moments_requiring_precise_inspection\": [\n    {\n      \"timestamp\": \"00:04.4\",\n      \"reason\": \"Inspect airplane mode toggle action in quick settings\"\n    },\n    {\n      \"timestamp\": \"00:07.1\",\n      \"reason\": \"Inspect app icon tap leading to app launch\"\n    }\n  ],\n  \"overall_summary\": \"The user toggles airplane mode on through the quick settings panel and then opens the offline medical protocol app Sahasya.\"\n}"
+  },
+  "gemini-3.5-flash-lite_run2": {
+    "model": "gemini-3.5-flash-lite",
+    "elapsed_seconds": 6.419,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 952,
+      "totalTokenCount": 2176,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        },
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "parsed_content": {
+      "visual_events": [
+        {
+          "start_timestamp": "00:00.0",
+          "end_timestamp": "00:03.9",
+          "event_description": "User displays the home screen with an app named Sahasya.",
+          "ui_state_changes": "Home screen showing app icons and wallpaper.",
+          "visible_actions": "None",
+          "on_screen_text": [
+            "Sahasya"
+          ],
+          "evidence": "App icon visible on top right of home screen.",
+          "confidence": "HIGH - clear view of home screen and app."
+        },
+        {
+          "start_timestamp": "00:03.9",
+          "end_timestamp": "00:06.0",
+          "event_description": "User pulls down the quick settings panel and toggles aeroplane mode.",
+          "ui_state_changes": "Quick settings panel appears, aeroplane mode icon lights up.",
+          "visible_actions": "Swipe down gesture, tap on aeroplane mode icon.",
+          "on_screen_text": [
+            "Aeroplane mode on",
+            "Wi-Fi",
+            "Bluetooth",
+            "Quick Share",
+            "Dark mode",
+            "Screenshot"
+          ],
+          "evidence": "Notification shade expanded and aeroplane mode highlighted.",
+          "confidence": "HIGH - clear visual transition of quick settings."
+        },
+        {
+          "start_timestamp": "00:06.0",
+          "end_timestamp": "00:07.0",
+          "event_description": "User returns to the home screen.",
+          "ui_state_changes": "Home screen displayed again.",
+          "visible_actions": "Swipe up or home navigation.",
+          "on_screen_text": [
+            "Sahasya"
+          ],
+          "evidence": "Home screen wallpaper and Sahasya app icon reappear.",
+          "confidence": "HIGH - wallpaper and icons match start state."
+        },
+        {
+          "start_timestamp": "00:07.0",
+          "end_timestamp": "00:09.9",
+          "event_description": "User taps on the Sahasya app icon, launching the app with a loading screen.",
+          "ui_state_changes": "Transition from home screen to white loading screen with app logo.",
+          "visible_actions": "Tap on Sahasya app icon.",
+          "on_screen_text": [],
+          "evidence": "App logo centered on white background during launch.",
+          "confidence": "HIGH - standard app launch sequence."
+        },
+        {
+          "start_timestamp": "00:09.9",
+          "end_timestamp": "00:14.4",
+          "event_description": "The Sahasya app main interface opens showing protocol search options.",
+          "ui_state_changes": "App home interface loaded with search bar and sample queries.",
+          "visible_actions": "None",
+          "on_screen_text": [
+            "Sahasya",
+            "Frontline Clinical Companion",
+            "Ask Sahasya Protocol Guide",
+            "Enter symptom, sign or question",
+            "SEARCH PROTOCOL",
+            "Quick Sample Queries:",
+            "Vaginal bleeding pregnant",
+            "Baby like sinking fast breathing",
+            "How much ORS for diarrhoea",
+            "What vaccines at birth",
+            "Amoxicillin syrup dose 1 yr",
+            "Ask Sahasya",
+            "Today's Visits"
+          ],
+          "evidence": "Fully rendered medical protocol assistant app interface.",
+          "confidence": "HIGH - UI elements are fully visible and readable."
+        }
+      ],
+      "moments_requiring_precise_inspection": [
+        {
+          "timestamp": "00:04.5",
+          "reason": "Examine quick settings toggle interaction for aeroplane mode."
+        },
+        {
+          "timestamp": "00:10.0",
+          "reason": "Inspect the fully loaded app interface and sample queries."
+        }
+      ],
+      "overall_summary": "The user navigates from the home screen, toggles aeroplane mode in quick settings, opens the Sahasya app, and views its clinical protocol search interface."
+    },
+    "raw_text": "{\n  \"visual_events\": [\n    {\n      \"start_timestamp\": \"00:00.0\",\n      \"end_timestamp\": \"00:03.9\",\n      \"event_description\": \"User displays the home screen with an app named Sahasya.\",\n      \"ui_state_changes\": \"Home screen showing app icons and wallpaper.\",\n      \"visible_actions\": \"None\",\n      \"on_screen_text\": [\"Sahasya\"],\n      \"evidence\": \"App icon visible on top right of home screen.\",\n      \"confidence\": \"HIGH - clear view of home screen and app.\"\n    },\n    {\n      \"start_timestamp\": \"00:03.9\",\n      \"end_timestamp\": \"00:06.0\",\n      \"event_description\": \"User pulls down the quick settings panel and toggles aeroplane mode.\",\n      \"ui_state_changes\": \"Quick settings panel appears, aeroplane mode icon lights up.\",\n      \"visible_actions\": \"Swipe down gesture, tap on aeroplane mode icon.\",\n      \"on_screen_text\": [\"Aeroplane mode on\", \"Wi-Fi\", \"Bluetooth\", \"Quick Share\", \"Dark mode\", \"Screenshot\"],\n      \"evidence\": \"Notification shade expanded and aeroplane mode highlighted.\",\n      \"confidence\": \"HIGH - clear visual transition of quick settings.\"\n    },\n    {\n      \"start_timestamp\": \"00:06.0\",\n      \"end_timestamp\": \"00:07.0\",\n      \"event_description\": \"User returns to the home screen.\",\n      \"ui_state_changes\": \"Home screen displayed again.\",\n      \"visible_actions\": \"Swipe up or home navigation.\",\n      \"on_screen_text\": [\"Sahasya\"],\n      \"evidence\": \"Home screen wallpaper and Sahasya app icon reappear.\",\n      \"confidence\": \"HIGH - wallpaper and icons match start state.\"\n    },\n    {\n      \"start_timestamp\": \"00:07.0\",\n      \"end_timestamp\": \"00:09.9\",\n      \"event_description\": \"User taps on the Sahasya app icon, launching the app with a loading screen.\",\n      \"ui_state_changes\": \"Transition from home screen to white loading screen with app logo.\",\n      \"visible_actions\": \"Tap on Sahasya app icon.\",\n      \"on_screen_text\": [],\n      \"evidence\": \"App logo centered on white background during launch.\",\n      \"confidence\": \"HIGH - standard app launch sequence.\"\n    },\n    {\n      \"start_timestamp\": \"00:09.9\",\n      \"end_timestamp\": \"00:14.4\",\n      \"event_description\": \"The Sahasya app main interface opens showing protocol search options.\",\n      \"ui_state_changes\": \"App home interface loaded with search bar and sample queries.\",\n      \"visible_actions\": \"None\",\n      \"on_screen_text\": [\n        \"Sahasya\",\n        \"Frontline Clinical Companion\",\n        \"Ask Sahasya Protocol Guide\",\n        \"Enter symptom, sign or question\",\n        \"SEARCH PROTOCOL\",\n        \"Quick Sample Queries:\",\n        \"Vaginal bleeding pregnant\",\n        \"Baby like sinking fast breathing\",\n        \"How much ORS for diarrhoea\",\n        \"What vaccines at birth\",\n        \"Amoxicillin syrup dose 1 yr\",\n        \"Ask Sahasya\",\n        \"Today's Visits\"\n      ],\n      \"evidence\": \"Fully rendered medical protocol assistant app interface.\",\n      \"confidence\": \"HIGH - UI elements are fully visible and readable.\"\n    }\n  ],\n  \"moments_requiring_precise_inspection\": [\n    {\n      \"timestamp\": \"00:04.5\",\n      \"reason\": \"Examine quick settings toggle interaction for aeroplane mode.\"\n    },\n    {\n      \"timestamp\": \"00:10.0\",\n      \"reason\": \"Inspect the fully loaded app interface and sample queries.\"\n    }\n  ],\n  \"overall_summary\": \"The user navigates from the home screen, toggles aeroplane mode in quick settings, opens the Sahasya app, and views its clinical protocol search interface.\"\n}"
+  },
+  "gemini-3.5-flash-lite_run3": {
+    "model": "gemini-3.5-flash-lite",
+    "elapsed_seconds": 6.021,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 993,
+      "totalTokenCount": 2217,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        },
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "parsed_content": {
+      "visual_events": [
+        {
+          "start_timestamp": "00:00.0",
+          "end_timestamp": "00:03.0",
+          "event_description": "User is on the phone home screen featuring a wallpaper of Lord Krishna.",
+          "ui_state_changes": "Home screen displayed with app icons and widgets.",
+          "visible_actions": "None",
+          "on_screen_text": [
+            "Sahasya"
+          ],
+          "evidence": "Phone home screen with Krishna wallpaper and Sahasya app icon visible.",
+          "confidence": "HIGH - clear view of home screen and app icons."
+        },
+        {
+          "start_timestamp": "00:04.0",
+          "end_timestamp": "00:05.0",
+          "event_description": "User pulls down the quick settings panel and toggles the Airplane mode button.",
+          "ui_state_changes": "Quick settings overlay appears, showing toggles like Wi-Fi, Bluetooth, and Airplane mode.",
+          "visible_actions": "Swipe down gesture followed by tapping the Airplane mode toggle.",
+          "on_screen_text": [
+            "Sun, 15 Oct",
+            "SUDHI KSHASA 5G",
+            "Aeroplane mode on",
+            "Wi-Fi",
+            "Bluetooth",
+            "Quick Share",
+            "Power menu",
+            "Screenshot"
+          ],
+          "evidence": "Quick settings panel displayed with Airplane mode activated.",
+          "confidence": "HIGH - panels and toggle states are clearly visible."
+        },
+        {
+          "start_timestamp": "00:06.0",
+          "end_timestamp": "00:06.5",
+          "event_description": "User returns to the phone home screen.",
+          "ui_state_changes": "Home screen reappears.",
+          "visible_actions": "Dismissing quick settings panel.",
+          "on_screen_text": [
+            "Sahasya"
+          ],
+          "evidence": "Transition back to the Krishna wallpaper home screen.",
+          "confidence": "HIGH"
+        },
+        {
+          "start_timestamp": "00:07.0",
+          "end_timestamp": "00:09.0",
+          "event_description": "User opens the Sahasya application from the home screen.",
+          "ui_state_changes": "Splash screen with the Sahasya app logo appears on a white background.",
+          "visible_actions": "Tapping the Sahasya app icon.",
+          "on_screen_text": [],
+          "evidence": "App logo shown on white background during loading.",
+          "confidence": "HIGH"
+        },
+        {
+          "start_timestamp": "00:10.0",
+          "end_timestamp": "00:14.0",
+          "event_description": "The Sahasya Clinical Companion app interface is loaded, showing protocol guide and sample queries.",
+          "ui_state_changes": "App home page displayed with search input and quick sample query buttons.",
+          "visible_actions": "None",
+          "on_screen_text": [
+            "Sahasya",
+            "Frontline Clinical Companion",
+            "Ask Sahasya Protocol Guide",
+            "100% Offline | Offline & HIPAA Protocols | Safety-First Escalation",
+            "Enter symptom, sign or question",
+            "(English / Hinglish / Telugu)",
+            "SEARCH PROTOCOL",
+            "Quick Sample Queries:",
+            "Vaginal bleeding pregnant",
+            "Baby like sinking fast breathing",
+            "How much ORS for diarrhoea",
+            "What vaccines at birth",
+            "Amoxicillin syrup dose 1yr",
+            "Sahasya Clinical Companion",
+            "Ask Sahasya",
+            "Today's Visits"
+          ],
+          "evidence": "Fully loaded app screen with header, search bar, sample query pills, and bottom navigation bar.",
+          "confidence": "HIGH - all text and UI elements are clearly visible."
+        }
+      ],
+      "moments_requiring_precise_inspection": [
+        {
+          "timestamp": "00:04.5",
+          "reason": "To observe the exact momentAirplane mode is enabled in quick settings."
+        }
+      ],
+      "overall_summary": "The user turns on Airplane mode from the quick settings panel and then opens the offline-capable Sahasya medical protocol app."
+    },
+    "raw_text": "{\n  \"visual_events\": [\n    {\n      \"start_timestamp\": \"00:00.0\",\n      \"end_timestamp\": \"00:03.0\",\n      \"event_description\": \"User is on the phone home screen featuring a wallpaper of Lord Krishna.\",\n      \"ui_state_changes\": \"Home screen displayed with app icons and widgets.\",\n      \"visible_actions\": \"None\",\n      \"on_screen_text\": [\"Sahasya\"],\n      \"evidence\": \"Phone home screen with Krishna wallpaper and Sahasya app icon visible.\",\n      \"confidence\": \"HIGH - clear view of home screen and app icons.\"\n    },\n    {\n      \"start_timestamp\": \"00:04.0\",\n      \"end_timestamp\": \"00:05.0\",\n      \"event_description\": \"User pulls down the quick settings panel and toggles the Airplane mode button.\",\n      \"ui_state_changes\": \"Quick settings overlay appears, showing toggles like Wi-Fi, Bluetooth, and Airplane mode.\",\n      \"visible_actions\": \"Swipe down gesture followed by tapping the Airplane mode toggle.\",\n      \"on_screen_text\": [\"Sun, 15 Oct\", \"SUDHI KSHASA 5G\", \"Aeroplane mode on\", \"Wi-Fi\", \"Bluetooth\", \"Quick Share\", \"Power menu\", \"Screenshot\"],\n      \"evidence\": \"Quick settings panel displayed with Airplane mode activated.\",\n      \"confidence\": \"HIGH - panels and toggle states are clearly visible.\"\n    },\n    {\n      \"start_timestamp\": \"00:06.0\",\n      \"end_timestamp\": \"00:06.5\",\n      \"event_description\": \"User returns to the phone home screen.\",\n      \"ui_state_changes\": \"Home screen reappears.\",\n      \"visible_actions\": \"Dismissing quick settings panel.\",\n      \"on_screen_text\": [\"Sahasya\"],\n      \"evidence\": \"Transition back to the Krishna wallpaper home screen.\",\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"start_timestamp\": \"00:07.0\",\n      \"end_timestamp\": \"00:09.0\",\n      \"event_description\": \"User opens the Sahasya application from the home screen.\",\n      \"ui_state_changes\": \"Splash screen with the Sahasya app logo appears on a white background.\",\n      \"visible_actions\": \"Tapping the Sahasya app icon.\",\n      \"on_screen_text\": [],\n      \"evidence\": \"App logo shown on white background during loading.\",\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"start_timestamp\": \"00:10.0\",\n      \"end_timestamp\": \"00:14.0\",\n      \"event_description\": \"The Sahasya Clinical Companion app interface is loaded, showing protocol guide and sample queries.\",\n      \"ui_state_changes\": \"App home page displayed with search input and quick sample query buttons.\",\n      \"visible_actions\": \"None\",\n      \"on_screen_text\": [\n        \"Sahasya\",\n        \"Frontline Clinical Companion\",\n        \"Ask Sahasya Protocol Guide\",\n        \"100% Offline | Offline & HIPAA Protocols | Safety-First Escalation\",\n        \"Enter symptom, sign or question\",\n        \"(English / Hinglish / Telugu)\",\n        \"SEARCH PROTOCOL\",\n        \"Quick Sample Queries:\",\n        \"Vaginal bleeding pregnant\",\n        \"Baby like sinking fast breathing\",\n        \"How much ORS for diarrhoea\",\n        \"What vaccines at birth\",\n        \"Amoxicillin syrup dose 1yr\",\n        \"Sahasya Clinical Companion\",\n        \"Ask Sahasya\",\n        \"Today's Visits\"\n      ],\n      \"evidence\": \"Fully loaded app screen with header, search bar, sample query pills, and bottom navigation bar.\",\n      \"confidence\": \"HIGH - all text and UI elements are clearly visible.\"\n    }\n  ],\n  \"moments_requiring_precise_inspection\": [\n    {\n      \"timestamp\": \"00:04.5\",\n      \"reason\": \"To observe the exact momentAirplane mode is enabled in quick settings.\"\n    }\n  ],\n  \"overall_summary\": \"The user turns on Airplane mode from the quick settings panel and then opens the offline-capable Sahasya medical protocol app.\"\n}"
+  },
+  "gemini-3.8-flash_run1": {
+    "model": "gemini-3.8-flash",
+    "elapsed_seconds": 14.415,
+    "usage": {
+      "promptTokenCount": 1224,
+      "candidatesTokenCount": 906,
+      "totalTokenCount": 2396,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 234
+        },
+        {
+          "modality": "VIDEO",
+          "tokenCount": 990
+        }
+      ],
+      "thoughtsTokenCount": 266,
+      "serviceTier": "standard"
+    },
+    "parsed_content": {
+      "visual_events": [
+        {
+          "start_timestamp": "00:00.0",
+          "end_timestamp": "00:03.5",
+          "event_description": "Mobile home screen is displayed showing app icons including Sahaaya.",
+          "ui_state_changes": "Home screen displayed with wallpaper and app icons.",
+          "visible_actions": "Idle on home screen before swiping down notification panel.",
+          "on_screen_text": [
+            "21:12",
+            "Sahaaya"
+          ],
+          "evidence": "Krishna wallpaper with app icons dock at bottom and Sahaaya icon at upper right.",
+          "confidence": "HIGH - Clearly visible home screen"
+        },
+        {
+          "start_timestamp": "00:03.5",
+          "end_timestamp": "00:06.0",
+          "event_description": "User pulls down the Android quick settings shade and activates Airplane mode.",
+          "ui_state_changes": "Quick settings shade opens, Airplane mode toggle is activated turning blue, and a toast message appears.",
+          "visible_actions": "Swipe down gesture, tap on Airplane mode icon, swipe up to dismiss panel.",
+          "on_screen_text": [
+            "Aeroplane mode on",
+            "Wi-Fi",
+            "Bluetooth",
+            "Airplane mode",
+            "Power saving mode"
+          ],
+          "evidence": "Quick settings tiles visible, 'Aeroplane mode on' toast notification at top, Wi-Fi turns off and airplane icon appears in status bar.",
+          "confidence": "HIGH - Toggle interaction and toast confirmation are clearly visible"
+        },
+        {
+          "start_timestamp": "00:06.0",
+          "end_timestamp": "00:09.5",
+          "event_description": "User returns to home screen and opens the Sahaaya application.",
+          "ui_state_changes": "Quick settings closed to home screen, then transitions into the Sahaaya splash screen.",
+          "visible_actions": "User taps the Sahaaya app icon on the home screen.",
+          "on_screen_text": [
+            "Sahaaya"
+          ],
+          "evidence": "App launch transition leading to a white splash screen with the blue and green Sahaaya swirl logo.",
+          "confidence": "HIGH - Standard app opening transition and splash screen"
+        },
+        {
+          "start_timestamp": "00:09.5",
+          "end_timestamp": "00:14.0",
+          "event_description": "The Sahaaya app loads its main screen showcasing the protocol guide search interface while offline.",
+          "ui_state_changes": "Splash screen transitions to the main dashboard of Sahaaya Frontline Clinical Companion.",
+          "visible_actions": "None, view remains static on the loaded home dashboard.",
+          "on_screen_text": [
+            "Sahaaya Frontline Clinical Companion",
+            "Ask Sahaaya Protocol Guide",
+            "100% Offline | MoHFW & NHM Protocols | Safety-First Escalation",
+            "Enter symptom, sign or question (English / Hinglish / Telugu)...",
+            "SEARCH PROTOCOL",
+            "Quick Sample Queries:",
+            "Vaginal bleeding pregnant",
+            "Baby ribs sinking fast breathing",
+            "How much ORS for diarrhoea",
+            "What vaccines at birth",
+            "Amoxicillin syrup dose 1 yr",
+            "Ask Sahaaya",
+            "Today's Visits"
+          ],
+          "evidence": "Full UI layout with search field, quick queries, and bottom navigation bar rendered.",
+          "confidence": "HIGH - All interface text and components are clearly legible"
+        }
+      ],
+      "moments_requiring_precise_inspection": [
+        {
+          "timestamp": "00:05.0",
+          "reason": "Confirm airplane mode toggle state and toast text indicator."
+        }
+      ],
+      "overall_summary": "The user turns on Airplane mode from the Android quick settings shade and subsequently opens the Sahaaya clinical companion app to demonstrate its offline functionality."
+    },
+    "raw_text": "{\n  \"visual_events\": [\n    {\n      \"start_timestamp\": \"00:00.0\",\n      \"end_timestamp\": \"00:03.5\",\n      \"event_description\": \"Mobile home screen is displayed showing app icons including Sahaaya.\",\n      \"ui_state_changes\": \"Home screen displayed with wallpaper and app icons.\",\n      \"visible_actions\": \"Idle on home screen before swiping down notification panel.\",\n      \"on_screen_text\": [\"21:12\", \"Sahaaya\"],\n      \"evidence\": \"Krishna wallpaper with app icons dock at bottom and Sahaaya icon at upper right.\",\n      \"confidence\": \"HIGH - Clearly visible home screen\"\n    },\n    {\n      \"start_timestamp\": \"00:03.5\",\n      \"end_timestamp\": \"00:06.0\",\n      \"event_description\": \"User pulls down the Android quick settings shade and activates Airplane mode.\",\n      \"ui_state_changes\": \"Quick settings shade opens, Airplane mode toggle is activated turning blue, and a toast message appears.\",\n      \"visible_actions\": \"Swipe down gesture, tap on Airplane mode icon, swipe up to dismiss panel.\",\n      \"on_screen_text\": [\"Aeroplane mode on\", \"Wi-Fi\", \"Bluetooth\", \"Airplane mode\", \"Power saving mode\"],\n      \"evidence\": \"Quick settings tiles visible, 'Aeroplane mode on' toast notification at top, Wi-Fi turns off and airplane icon appears in status bar.\",\n      \"confidence\": \"HIGH - Toggle interaction and toast confirmation are clearly visible\"\n    },\n    {\n      \"start_timestamp\": \"00:06.0\",\n      \"end_timestamp\": \"00:09.5\",\n      \"event_description\": \"User returns to home screen and opens the Sahaaya application.\",\n      \"ui_state_changes\": \"Quick settings closed to home screen, then transitions into the Sahaaya splash screen.\",\n      \"visible_actions\": \"User taps the Sahaaya app icon on the home screen.\",\n      \"on_screen_text\": [\"Sahaaya\"],\n      \"evidence\": \"App launch transition leading to a white splash screen with the blue and green Sahaaya swirl logo.\",\n      \"confidence\": \"HIGH - Standard app opening transition and splash screen\"\n    },\n    {\n      \"start_timestamp\": \"00:09.5\",\n      \"end_timestamp\": \"00:14.0\",\n      \"event_description\": \"The Sahaaya app loads its main screen showcasing the protocol guide search interface while offline.\",\n      \"ui_state_changes\": \"Splash screen transitions to the main dashboard of Sahaaya Frontline Clinical Companion.\",\n      \"visible_actions\": \"None, view remains static on the loaded home dashboard.\",\n      \"on_screen_text\": [\n        \"Sahaaya Frontline Clinical Companion\",\n        \"Ask Sahaaya Protocol Guide\",\n        \"100% Offline | MoHFW & NHM Protocols | Safety-First Escalation\",\n        \"Enter symptom, sign or question (English / Hinglish / Telugu)...\",\n        \"SEARCH PROTOCOL\",\n        \"Quick Sample Queries:\",\n        \"Vaginal bleeding pregnant\",\n        \"Baby ribs sinking fast breathing\",\n        \"How much ORS for diarrhoea\",\n        \"What vaccines at birth\",\n        \"Amoxicillin syrup dose 1 yr\",\n        \"Ask Sahaaya\",\n        \"Today's Visits\"\n      ],\n      \"evidence\": \"Full UI layout with search field, quick queries, and bottom navigation bar rendered.\",\n      \"confidence\": \"HIGH - All interface text and components are clearly legible\"\n    }\n  ],\n  \"moments_requiring_precise_inspection\": [\n    {\n      \"timestamp\": \"00:05.0\",\n      \"reason\": \"Confirm airplane mode toggle state and toast text indicator.\"\n    }\n  ],\n  \"overall_summary\": \"The user turns on Airplane mode from the Android quick settings shade and subsequently opens the Sahaaya clinical companion app to demonstrate its offline functionality.\"\n}"
+  }
+}

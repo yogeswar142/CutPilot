@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "status": "ALL_CHECKS_PASSED",
+    "canary_project": "CutPilot_Canary",
+    "operations_tested": [
+      "pm.CreateProject",
+      "mp.ImportMedia",
+      "mp.CreateEmptyTimeline",
+      "project.SetCurrentTimeline",
+      "mp.AppendToTimeline",
+      "pm.SaveProject"
+    ],
+    "timeline_verification": {
+      "verified": true,
+      "project_name": "CutPilot_Canary",
+      "timeline_name": "Canary_Timeline_01",
+      "track_type": "video",
+      "track_index": 1,
+      "clip_name": "test-15s.mp4",
+      "media_pool_source": "test-15s.mp4",
+      "start_frame": 86400,
+      "end_frame": 86457,
+      "duration_frames": 57,
+      "total_items_on_track": 1
+    },
+    "error": null
+  },
+  "events": [
+    {
+      "timestamp": "2026-10-19T20:46:32",
+      "step": "precondition_media",
+      "status": "PASS",
+      "details": {
+        "path": "tests/fixtures/media/test-15s.mp4",
+        "size": 5525433
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:32",
+      "step": "connect_bridge",
+      "status": "PASS",
+      "details": {
+        "product": "DaVinci Resolve",
+        "version": "21.0.3.7"
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:32",
+      "step": "initial_project_check",
+      "status": "PASS",
+      "details": {
+        "active_project": "existing_project"
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:32",
+      "step": "list_projects",
+      "status": "PASS",
+      "details": {
+        "projects": [
+          "existing_project"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:34",
+      "step": "target_canary_project",
+      "status": "PASS",
+      "details": {
+        "active_project": "CutPilot_Canary"
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:35",
+      "step": "media_pool_import",
+      "status": "PASS",
+      "details": {
+        "clip_name": "test-15s.mp4"
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:36",
+      "step": "timeline_create",
+      "status": "PASS",
+      "details": {
+        "timeline_name": "Canary_Timeline_01"
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:37",
+      "step": "set_current_timeline",
+      "status": "PASS",
+      "details": {
+        "timeline_name": "Canary_Timeline_01"
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:37",
+      "step": "clip_placement",
+      "status": "PASS",
+      "details": {
+        "appended": 1
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:37",
+      "step": "fresh_query_verification",
+      "status": "PASS",
+      "details": {
+        "verified": true,
+        "project_name": "CutPilot_Canary",
+        "timeline_name": "Canary_Timeline_01",
+        "track_type": "video",
+        "track_index": 1,
+        "clip_name": "test-15s.mp4",
+        "media_pool_source": "test-15s.mp4",
+        "start_frame": 86400,
+        "end_frame": 86457,
+        "duration_frames": 57,
+        "total_items_on_track": 1
+      }
+    },
+    {
+      "timestamp": "2026-10-19T20:46:37",
+      "step": "save_canary_project",
+      "status": "PASS",
+      "details": {
+        "project": "CutPilot_Canary"
+      }
+    }
+  ]
+}

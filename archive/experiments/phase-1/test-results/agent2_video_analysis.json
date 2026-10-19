@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "agent": "Agent 2 — Video Understanding",
+  "vlm_model_specification": {
+    "model_name": "qwen3-vl:4b",
+    "architecture": "Qwen2.5-VL / Qwen3-VL Vision Language Model",
+    "parameters": "4.4B",
+    "quantization": "Q4_K_M (GGUF)",
+    "inference_backend": "Ollama local API (http://127.0.0.1:11434)",
+    "runner": "llama.cpp (ggml CPU)",
+    "hardware_device": "Qualcomm Oryon CPU (6 cores, ARM64 Windows)"
+  },
+  "video_metadata": {
+    "filename": "test-15s.mp4",
+    "duration_seconds": 15.267,
+    "file_size_bytes": 5525433,
+    "container_format": "QuickTime / MOV",
+    "video_stream": {
+      "codec": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "Main",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": "16:9",
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "total_frames": 458,
+      "bitrate_bps": 2695029
+    }
+  },
+  "representative_frames_extracted": [
+    "frame_00.5s.jpg",
+    "frame_02.0s.jpg",
+    "frame_03.0s.jpg",
+    "frame_05.0s.jpg",
+    "frame_07.5s.jpg",
+    "frame_08.0s.jpg",
+    "frame_09.5s.jpg",
+    "frame_12.0s.jpg",
+    "frame_14.0s.jpg",
+    "frame_15.0s.jpg"
+  ],
+  "scene_phases": [
+    {
+      "phase_id": 1,
+      "name": "Smartphone Home Screen (Beginning)",
+      "timestamp_range": "00:00:00.000 - 00:00:03.200",
+      "anchor_timestamp_s": 1.0,
+      "frame_file": "frame_00.5s.jpg",
+      "vlm_model_used": "qwen3-vl:4b",
+      "vlm_inference_backend": "Ollama (llama-server ggml/CPU)",
+      "inference_duration_s": 223.25,
+      "visual_elements": {
+        "visible_people_objects_setting": [
+          "Smartphone home screen framed in portrait mode with black side borders.",
+          "Wallpaper depicts a divine figure (traditional depiction of Lord Krishna with blue skin tone, peacock feather in hair, gold jewelry, and floral garland) against a celestial sky with crescent moon and luminous clouds.",
+          "Top status bar showing time '21:12', active timer '00:01' with red recording dot, and green system status indicator.",
+          "Centered search bar widget ('Q. Search').",
+          "Bottom dock icons: Phone (blue handset), Messages (blue bubble), Camera (white lens), and custom Red Lion icon.",
+          "App icon in upper grid labeled 'Sahaaya' with blue stylized symbol."
+        ],
+        "actions_and_events": [
+          "Presenter prepares device for app demonstration.",
+          "Screen recording indicator active in status bar."
+        ],
+        "shot_and_camera": [
+          "Static screen capture (direct screen recording, no external camera shake).",
+          "Framing: 16:9 container enclosing 9:16 portrait smartphone display."
+        ],
+        "on_screen_text": [
+          "Time: '21:12'",
+          "Timer: '00:01'",
+          "App label: 'Sahaaya'",
+          "Search placeholder: 'Q. Search'"
+        ],
+        "observed_facts_vs_interpretations": {
+          "facts": "Phone home screen is visible with Sahaaya app icon, status bar at 21:12, and screen recording timer.",
+          "interpretation": "The user is about to demonstrate the Sahaaya mobile application."
+        }
+      }
+    },
+    {
+      "phase_id": 2,
+      "name": "Control Center & Airplane Mode Toggle (Middle - Transition)",
+      "timestamp_range": "00:00:03.200 - 00:00:07.500",
+      "anchor_timestamp_s": 5.0,
+      "frame_file": "frame_05.0s.jpg",
+      "vlm_model_used": "qwen3-vl:4b",
+      "vlm_inference_backend": "Ollama (llama-server ggml/CPU)",
+      "inference_duration_s": 263.16,
+      "visual_elements": {
+        "visible_people_objects_setting": [
+          "Android / Samsung One UI Quick Settings / Control Center shade pulled down over home screen.",
+          "Top bar displays time '2:13' (or 21:13 12h display), date 'Sun, 18 Oct', battery and status icons.",
+          "Wi-Fi status card displaying network name: 'SUCHI KSHA 5G Connected'.",
+          "Bluetooth card showing active blue state.",
+          "Media player panel showing 'Not playing' with transport controls.",
+          "Quick settings grid containing 9 toggle buttons: 'Spotlight', 'Location', 'Airplane mode', 'Device control', 'Auto-rotate', 'Do Not Disturb', 'Quick Share', 'Power saving mode', 'Dark mode', 'Screenshot'."
+        ],
+        "actions_and_events": [
+          "Pull-down gesture reveals the notification and quick settings shade.",
+          "Airplane mode toggle is targeted to disconnect cellular and Wi-Fi networks.",
+          "Visual state shift as network disconnects, preparing for offline app demonstration."
+        ],
+        "shot_and_camera": [
+          "Direct screen capture with smooth UI slide-down animation.",
+          "Framing unchanged; foreground overlay replaces wallpaper."
+        ],
+        "on_screen_text": [
+          "Time: '2:13', Date: 'Sun, 18 Oct'",
+          "Network: 'SUCHI KSHA 5G Connected'",
+          "Toggles: 'Airplane mode', 'Location', 'Spotlight', 'Bluetooth', 'Device control', 'Auto-rotate', 'Do Not Disturb', 'Quick Share', 'Power saving mode', 'Dark mode', 'Screenshot'"
+        ],
+        "observed_facts_vs_interpretations": {
+          "facts": "Quick Settings panel is displayed with Wi-Fi connected to 'SUCHI KSHA 5G' and Airplane mode toggle button visible.",
+          "interpretation": "Presenter is toggling Airplane mode to verify that the app functions in an offline environment."
+        }
+      }
+    },
+    {
+      "phase_id": 3,
+      "name": "Dismiss Shade & App Launch (Middle - Action)",
+      "timestamp_range": "00:00:07.500 - 00:00:09.500",
+      "anchor_timestamp_s": 8.0,
+      "frame_file": "frame_08.0s.jpg",
+      "vlm_model_used": "qwen3-vl:4b",
+      "vlm_inference_backend": "Ollama (llama-server ggml/CPU)",
+      "inference_duration_s": 180.0,
+      "visual_elements": {
+        "visible_people_objects_setting": [
+          "Home screen re-exposed as control shade is dismissed upwards.",
+          "Status bar now reflects updated state (Airplane mode active).",
+          "Touch interaction targets the 'Sahaaya' app icon in the upper grid."
+        ],
+        "actions_and_events": [
+          "Swipe up gesture closes Quick Settings panel.",
+          "Tap gesture triggers launch of the Sahaaya application."
+        ],
+        "shot_and_camera": [
+          "Screen transition from Control Center overlay back to home screen, then splash transition."
+        ],
+        "on_screen_text": [
+          "App title: 'Sahaaya'",
+          "Status bar time and airplane indicator."
+        ],
+        "observed_facts_vs_interpretations": {
+          "facts": "The Quick Settings shade disappears and the user launches the Sahaaya application.",
+          "interpretation": "The user is transitioning into the main demonstration of the mobile app."
+        }
+      }
+    },
+    {
+      "phase_id": 4,
+      "name": "Sahaaya Clinical Companion UI (End)",
+      "timestamp_range": "00:00:09.500 - 00:00:15.267",
+      "anchor_timestamp_s": 12.0,
+      "frame_file": "frame_12.0s.jpg",
+      "vlm_model_used": "qwen3-vl:4b",
+      "vlm_inference_backend": "Ollama (llama-server ggml/CPU)",
+      "inference_duration_s": 162.22,
+      "visual_elements": {
+        "visible_people_objects_setting": [
+          "Sahaaya application interface loaded in full screen portrait mode.",
+          "App header displaying title 'Sahaaaya' with subtitle 'Frontline Clinical Companion'.",
+          "Language selector bar displaying 'English / Hindi / Telugu...'.",
+          "Header utility icons: Chat bubble, Night mode toggle, Settings gear.",
+          "Central prominent green action button: 'SEARCH PROTOCOL' with magnifying glass icon and microphone icon for voice queries.",
+          "'Quick Sample Queries' section containing clinical topic chips: 'Vaginal bleeding pregnant', 'Amoxicillin syrup dose 1 yr'.",
+          "Branding card: 'Sahaaaya Clinical Companion' with description: 'Ask clinical queries in English, Hindi, or Telugu. Strict protocol citations. Hardcoded danger escalations. Zero hallucination.'",
+          "Bottom navigation bar with two primary tabs: 'Ask Sahaaaya' (active) and 'Today's Visits' (calendar icon)."
+        ],
+        "actions_and_events": [
+          "Application UI is presented in idle/ready state.",
+          "Presenter points out the interface layout designed for frontline community health workers (ASHA workers)."
+        ],
+        "shot_and_camera": [
+          "Direct screen capture of clean medical application interface.",
+          "Composition: Clean white background with professional medical green accents, high typography contrast."
+        ],
+        "on_screen_text": [
+          "Header: 'Sahaaaya', 'Frontline Clinical Companion'",
+          "Language Options: 'English / Hindi / Telugu...'",
+          "Button: 'SEARCH PROTOCOL'",
+          "Section Title: 'Quick Sample Queries'",
+          "Query Examples: 'Vaginal bleeding pregnant', 'Amoxicillin syrup dose 1 yr'",
+          "Value Proposition: 'Ask clinical queries in English, Hindi, or Telugu. Strict protocol citations. Hardcoded danger escalations. Zero hallucination.'",
+          "Navigation Tabs: 'Ask Sahaaaya', 'Today's Visits'"
+        ],
+        "observed_facts_vs_interpretations": {
+          "facts": "A mobile healthcare app named 'Sahaaaya' is displayed with clinical protocol search functionality and language selection.",
+          "interpretation": "This tool is built as an offline decision support system for frontline healthcare workers in rural or low-connectivity settings."
+        }
+      }
+    }
+  ],
+  "performance_profile": {
+    "total_representative_frames_extracted": 10,
+    "vlm_anchor_frames_analyzed": 4,
+    "average_inference_time_per_frame_s": 207.15,
+    "resource_usage": "100% CPU utilization across 6 Oryon cores; ~4.5 GB RAM working set for llama-server",
+    "bottlenecks": "Vision transformer patch encoding and autoregressive generation on CPU without NPU/DirectML acceleration."
+  },
+  "visual_grounding_verification": {
+    "is_grounded_in_actual_video": true,
+    "hallucination_detected": false,
+    "text_ocr_verified": true,
+    "dialogue_inferred_from_visuals": false,
+    "unprocessed_frames_claimed": false
+  }
+}
